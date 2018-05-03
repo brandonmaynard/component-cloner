@@ -1,0 +1,8 @@
+<h1>Component Cloner</h1>
+<p data-sly-test="${request.requestParameterMap['componentClonerError']
+        && request.requestParameterMap['componentClonerError'][0].toString == 'true'}">
+    The Component Cloner was unsuccessful. Please check the logs for more information.
+</p>
+<p data-sly-test="${!request.requestParameterMap['componentClonerError']}">
+    Please select a component to copy by opening the dialog and navigating to the desired component.
+</p>
